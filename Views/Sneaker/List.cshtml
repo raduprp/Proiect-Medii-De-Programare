@@ -1,0 +1,11 @@
+﻿@model SneakersListViewModel
+
+    <h1>@Model.CurrentCategory</h1>
+    @foreach (var sneaker in Model.Sneakers)
+    {
+
+        <partial name="_SneakerCard" model="sneaker"/>
+    
+    
+    }
+
